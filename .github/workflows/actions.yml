@@ -23,9 +23,7 @@ jobs:
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
+          bundle exec rubocop
           bundle exec rails db:create
           bundle exec rails db:migrate
           bundle exec rake
-      - name: Rubocop Check
-        run: |
-          bundle exec rubocop
