@@ -23,6 +23,8 @@ AllCops:
     - 'actiontext/test/dummy/**/*'
     - '**/node_modules/**/*'
     - 'db/schema.rb'
+    - 'db/development.sqlite3.rb'
+    - 'db/test.sqlite3.rb'
     - 'spec/fixtures/**/*'
     - 'bin/*'
 
